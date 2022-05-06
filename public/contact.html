@@ -1,0 +1,118 @@
+<html>
+<head>
+  <title>Happy Tails</title>
+  <link rel = "icon" href ="https://cdn2.iconfinder.com/data/icons/hearts-16/100/029-512.png" type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <style type="text/css">
+  body {
+    background-image: url(contactdoglarge.jpg);
+  }
+  </style>
+</head>
+<body>
+
+
+   <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Happy Tails</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active"><a href="#contact">Contact</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-target="#signup" data-toggle="modal">SignUp  <i class="fa fa-user-plus"></i></a></li>
+        <li><a href="#" data-target="#login" data-toggle="modal">Login <i class="fa fa-user"></i></a></li>
+      </ul>
+    </div>
+  </div>
+ </nav>
+
+<!--The popup login form-->
+  <div id="login" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      
+      <div class="modal-content">
+        <div class="modal-body">
+          <button data-dismiss="modal" class="close">&times;</button>
+          <h4>Login</h4>
+          <form name="logmein" onSubmit="return LoginformValidation();">
+            <input type="text" name="username" class="username form-control" placeholder="Username"required>
+            <input type="password" name="password" class="password form-control" placeholder="password" required>
+            <input class="btn login" type="submit" value="Login" />
+          </form>
+        </div>
+      </div>
+    </div>  
+  </div>
+<!--                  -->
+
+<!--The popup SignUp form-->
+  <div id="signup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      
+      <div class="modal-content">
+        <div class="modal-body">
+          <button data-dismiss="modal" class="close">&times;</button>
+          <h4>Sign Up</h4>
+          <form name="signmein" onSubmit="return SignupformValidation();">
+            <input type="text" name="emailid" class="emailid form-control" placeholder="Email ID" required>
+            <input type="text" name="username" class="username form-control" placeholder="Username" required>
+            <input type="password" name="password" class="password form-control" placeholder="password" required>
+            <input class="btn login" type="submit" value="SignUp">
+          </form>
+        </div>
+      </div>
+    </div>  
+  </div>
+<!--                  -->
+<div class="container custombox" id="transist">
+<h2 class="customheading">Contact Us</h2>
+<br><br>
+    <div class="row">
+      <div class="col-md-6">
+<p class="customcontent"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i> &nbsp; Phone no: +91 7419011981</p>  <br><br />
+  <p class="customcontent"><i class="fa fa-phone fa-2x" aria-hidden="true"></i> &nbsp; Emergency no: 1011</p> <br><br />
+  <p class="customcontent"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> &nbsp; Address: Block No. 110, Sector-37,  Happy Tails Office, Rohini, New Delhi</p>
+      </div>
+      <div class="col-md-6">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.9425433004967!2d77.05197834946685!3d28.75113238228457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d07abbaaa1f99%3A0xf02ff52255e4353!2sRohini%2C%20Delhi%2C%20110039!5e0!3m2!1sen!2sin!4v1597072708101!5m2!1sen!2sin" width="300" height="225" frameborder="0" style="border:0; float: right;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+
+    </div>
+<br><br><br>
+  <div class="formdiv"  style="margin-top: 60px;">
+    <h3 class="customheading">Mail Us</h3>
+    <br><br>
+      <form name="mailus" onSubmit="return MailusValidation();">
+        <table>
+       <tr><td><span class="customcontent">Name:</span></td><td><input class="inputt" type="text" placeholder="Enter your Name" class="cusername" name="username" required></td></tr>
+       <tr><td><span class="customcontent">Email:</span></td><td><input class="inputt" type="text" placeholder="Enter your Email ID" class="cemail" name="emailid" required></td></tr>
+       <tr><td><span class="customcontent">Your Message:</span></td><td><textarea rows="6" cols="90" class="black" placeholder="Write here"></textarea></td></tr>
+      </table>
+      <button class="btn btn-info btn-lg">Send Mail</button>
+      </form>
+  </div>
+</div>
+
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="validation.js"></script>
+
+</body>
+</html>

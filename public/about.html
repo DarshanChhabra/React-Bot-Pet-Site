@@ -1,0 +1,117 @@
+<html>
+<head>
+  <title>Happy Tails</title>
+  <link rel = "icon" href ="https://cdn2.iconfinder.com/data/icons/hearts-16/100/029-512.png" type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="app.css">
+
+  <style type="text/css">
+  .imgs {
+    max-height: 400px;
+    max-width: 600px;
+    min-width: 300px;
+    min-height: 200px;
+    height: auto;
+    width: 50%;
+    border: 8px solid black;
+    border-style: double;
+    border-spacing: 5px;
+  }
+body {
+    background-image: url(aboutmediumbirds.jpg);
+  }
+  </style>
+
+</head>
+<body>
+
+
+
+   <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Happy Tails</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#about">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-target="#signup" data-toggle="modal">SignUp  <i class="fa fa-user-plus"></i></a></li>
+        <li><a href="#" data-target="#login" data-toggle="modal">Login <i class="fa fa-user"></i></a></li>
+      </ul>
+    </div>
+  </div>
+ </nav>
+
+<!--The popup login form-->
+  <div id="login" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      
+      <div class="modal-content">
+        <div class="modal-body">
+          <button data-dismiss="modal" class="close">&times;</button>
+          <h4>Login</h4>
+          <form>
+            <input type="text" name="username" class="username form-control" placeholder="Username"required>
+            <input type="password" name="password" class="password form-control" placeholder="password" required>
+            <input class="btn login" type="submit" value="Login" />
+          </form>
+        </div>
+      </div>
+    </div>  
+  </div>
+<!--                  -->
+
+<!--The popup SignUp form-->
+  <div id="signup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      
+      <div class="modal-content">
+        <div class="modal-body">
+          <button data-dismiss="modal" class="close">&times;</button>
+          <h4>Sign Up</h4>
+          <form>
+            <input type="email" name="emailid" class="emailid form-control" placeholder="Email ID" required>
+            <input type="text" name="username" class="username form-control" placeholder="Username" required>
+            <input type="password" name="password" class="password form-control" placeholder="password" required>
+            <input class="btn login" type="submit" value="SignUp">
+          </form>
+        </div>
+      </div>
+    </div>  
+  </div>
+<!--                  -->
+
+  <div class="container custombox" id="transist">
+    <h2 class="customheading">About Us</h2>
+    <br><br><br>
+    <center>
+    <img class="imgs" src="https://images.squarespace-cdn.com/content/v1/55ba54bde4b0bcf93d71b9bd/1550354624015-W5D80I5PSF1HQR6W307A/ke17ZwdGBToddI8pDm48kN_ZoNdj1kv_gIvm4zjH76N7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0jG2lbcDYBOeMi4OFSYem8AelHsSihC3tfiYK1eHEM7W3AVjJQSBul2wE-DqW7dygg/pet+portraits+-+In+Rock+Creek+Park.jpg?format=1000w">
+    </center>
+    <p class="customcontent">
+      <br><br>
+        Our goal is to become the most preferred way of finding a new pet online. Every pet
+        deserves a good life. With a vision to end animal suffering, we rescue, heal, adopt and advocate for sick, injured and abused animals. We are the only association which organizes emergency rescue operations for animals in more than 17 states of India!, Only a call away on our <em><u>Emergency phone No. 1011.</u></em>
+    </p>
+  </div>
+
+
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<div id="root"></div>
+</body>
+</html>
